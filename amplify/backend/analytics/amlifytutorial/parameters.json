@@ -1,0 +1,21 @@
+{
+    "appName": "amlifytutorial",
+    "roleName": "pinpointLambdaRoled5e4ff61",
+    "cloudformationPolicyName": "cloudformationPolicyd5e4ff61",
+    "cloudWatchPolicyName": "cloudWatchPolicyd5e4ff61",
+    "pinpointPolicyName": "pinpointPolicyd5e4ff61",
+    "authPolicyName": "pinpoint_amplify_d5e4ff61",
+    "unauthPolicyName": "pinpoint_amplify_d5e4ff61",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
